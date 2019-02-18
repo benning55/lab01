@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       // home: MyHomePage(),
       initialRoute: '/',
       routes: {
-        "/" : (context) => MyCustomForm(),
+        "/" : (context) => FirstScreen(),
         "/second" : (context) => SecondScreen()
       },
     );
