@@ -3,6 +3,8 @@ import './ui/login_page.dart';
 import './ui/home_page.dart';
 import './ui/register_page.dart';
 import './ui/todo_screen.dart';
+import './ui/LoginScreen.dart';
+import './ui/RegisterScreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,9 +20,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        "/": (context) => TodoScreen(),
+        "/": (context) => LoginScreen(),
         "/home_page": (context) => HomePage(),
-        "/register_page": (context) => RegisterPage()
+        "/register_page": (context) => RegisterPage(),
+        "/register_screen": (context) => RegisterScreen()
       },
     );
   }
